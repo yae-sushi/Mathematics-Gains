@@ -29,7 +29,6 @@ parameters {
 
 transformed parameters  {
 
-  // I hope this is right...
   real mu[N_students];
   real a[N_classes];
   real b[N_schools];
@@ -49,7 +48,6 @@ transformed parameters  {
 }
 
 model {
-  // What am I doing I really hope this is correct
   
   // Level 1
   for (i in 1:N_students){
