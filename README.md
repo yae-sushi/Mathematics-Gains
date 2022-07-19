@@ -31,8 +31,11 @@ Comprised of three levels: students, classrooms, and schools.
 
 ![image](https://user-images.githubusercontent.com/64810654/179855539-9a7461cd-efcf-47bc-88d6-79775469070e.png)
 
+- Alpha_j represents average estimated math gain effects for classroom j.
+- Beta_k represents average estimated math gain effects for school k.
+
 ## Takeaways
 
-- There are modelable, significant, varying classroom and school-level effects on students' individual math gains.
+- There are modelable, significant, varying classroom and school-level effects on students' individual math gains. We can also see how much these effects vary as a whole by examining the standard deviation of random effects.
 - The main advantage of using a multi-level approach is that data can be partially pooled. It eliminates the need to create a separate model (totally unpooled) for each classroom and school, or a separate dummy variable for each in one big model (totally pooled). This is especially helpful when data is sparse for some cross sections (ie. few children in one class, few children in one school). It also makes modeling overall more concise and feature engineering less work, which is a relief when there are 312 classrooms and 107 schools.
 - Although it requires some training to use, STAN is exceptionally useful if there is prior knowledge that can be put into the model (as priors, hehe) and runs relatively quickly. Four MCMC with 2000 iterations each took less than 3 minutes to perform.
